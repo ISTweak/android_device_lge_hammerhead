@@ -19,6 +19,8 @@
 #
 # Everything in this directory will become public
 
+#OpenGAPPS
+GAPPS_VARIANT := pico
 
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab
@@ -370,3 +372,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x74/msm8x74-gpu-vendor.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
+
+#OpenGAPPS
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
