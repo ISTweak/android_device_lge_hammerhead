@@ -21,6 +21,9 @@
 
 # ro.product.first_api_level indicates the first api level the device has commercially launched on.
 
+PRODUCT_COPY_FILES += \
+    device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=19
 
