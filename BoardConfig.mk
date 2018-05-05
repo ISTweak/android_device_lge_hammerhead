@@ -155,3 +155,6 @@ TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.160/leds/lcd-b
 TW_MAX_BRIGHTNESS := 255
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 TW_EXTRA_LANGUAGES := true
+
+#OpenGAPPS
+GAPPS_VARIANT := Pico

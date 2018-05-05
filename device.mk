@@ -21,6 +21,9 @@
 
 # ro.product.first_api_level indicates the first api level the device has commercially launched on.
 
+#OpenGAPPS
+GAPPS_VARIANT := pico
+
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/twrp.fstab:recovery/root/etc/twrp.fstab
 
@@ -460,3 +463,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product-if-exists, hardware/qcom/msm8x74/msm8x74.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x74/msm8x74-gpu-vendor.mk)
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
+
+#OpenGAPPS
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
